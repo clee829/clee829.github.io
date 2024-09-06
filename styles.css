@@ -1,0 +1,116 @@
+﻿/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title-image {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+    .title-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+h1 {
+    color: #444;
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Dogs Section */
+.dogs-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.dog-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px; /* Wider card */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+    .dog-card:hover {
+        transform: scale(1.05);
+    }
+
+    .dog-card img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .dog-card h3 {
+        font-size: 24px;
+        color: #333;
+        margin: 15px 0 10px;
+    }
+
+    .dog-card p {
+        font-size: 16px;
+        color: #777;
+    }
+
+button {
+    background-color: #f76c6c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #ff5e5e;
+    }
+
+    /* Disabled Button for Adopted Dog */
+    button.disabled {
+        background-color: #ccc;
+        color: #666;
+        cursor: not-allowed;
+        border: none;
+    }
+
+        button.disabled:hover {
+            background-color: #ccc; /* No hover effect for disabled button */
+        }
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
